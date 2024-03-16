@@ -137,7 +137,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link"
+                class="nav-link active"
                 data-bs-toggle="tab"
                 data-bs-target="#celeb-box"
                 type="button"
@@ -181,7 +181,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link active"
+                class="nav-link"
                 data-bs-toggle="tab"
                 data-bs-target="#compare-box"
                 type="button"
@@ -274,7 +274,7 @@
             <div
               id="celeb-box"
               role="tabpanel"
-              class="tab-pane fade container pt-5 shadow p-5 mb-5 bg-white rounded"
+              class="tab-pane fade show active container pt-5 shadow p-5 mb-5 bg-white rounded"
             >
               <h2 id="celeb" style="text-align: center">Celebrities</h2>
               <p>
@@ -299,8 +299,6 @@
             >
               <h2 id="robustness" style="text-align: center">Robustness</h2>
               <p>
-                <!-- CLaM-TTS can synthesize robust speech, as supported by its low -->
-                <!-- WER. Samples are brought from Mega-TTS demo. -->
                 CLaM-TTS can produce robust speech, evidenced by its low WER.
                 Samples are taken from the Mega-TTS demo<sup
                   ><a href="#footnote4">1</a></sup
@@ -417,8 +415,6 @@
                 Speech Diversity
               </h2>
               <p>
-                <!-- CLaM-TTS can synthesize speech of diverse prosody and timbre of -->
-                <!-- various speakers when generated without prompt. -->
                 CLaM-TTS can synthesize speech with diverse prosody and timbre
                 from various speakers when generated without a prompt. First
                 four text samples are brought from Vall-E demo<sup
@@ -747,11 +743,6 @@
                 prompting, the system discerns the text's meaning and outputs
                 appropriately emotional speech. For more details, refer to
                 <b>Appendix B.2</b> of our paper.
-                <!-- We demonstrate that using the emotion
-                information from the Korean dataset, we can generate emotional
-                speech (sometimes, even without text prompt, CLaM-TTS
-                understands meaning of the text and produces matching emotional speech).
-                For further details, please see Appendix B.2 of our paper. -->
               </p>
               <div class="card card-body clam-card">
                 <div class="clam-sample-box">
@@ -988,7 +979,7 @@
             <div
               id="compare-box"
               role="tabpanel"
-              class="tab-pane fade show active container pt-5 shadow p-5 mb-5 bg-white rounded"
+              class="tab-pane fade container pt-5 shadow p-5 mb-5 bg-white rounded"
             >
               <h2 id="compare" style="text-align: center">Comparison with LibriSpeech Zero-Shot Demo Cases</h2>
               <p>
@@ -1019,8 +1010,6 @@
                     <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/0.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
                     <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/0.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
-                    <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/0.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                     <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/0.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/0.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
@@ -1029,7 +1018,6 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/1.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/1.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/1.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/1.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/1.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/1.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -1040,8 +1028,6 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/2.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/2.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/2.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/2.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/2.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
@@ -1060,7 +1046,6 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/4.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/4.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/4.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/4.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/4.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
@@ -1078,7 +1063,6 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/6.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/6.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/6.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/6.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/6.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/6.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -1089,7 +1073,6 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/7.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/7.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/7.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/7.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/7.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
@@ -1098,10 +1081,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/8.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/8.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/8.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/8.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/8.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/8.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1109,10 +1090,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/9.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/9.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/9.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/9.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/9.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/9.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1120,10 +1099,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/10.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/10.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/10.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/10.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/10.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/10.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1131,10 +1108,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/11.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/11.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/11.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/11.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/11.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/11.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1142,10 +1117,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/12.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/12.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/12.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/12.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/12.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/12.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1153,10 +1126,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/13.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/13.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/13.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/13.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/13.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/13.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1164,10 +1135,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/14.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/14.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/14.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/14.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/14.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/14.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     <tr>
@@ -1175,10 +1144,8 @@
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/prompt/15.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/gt/15.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/megatts/15.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ns2/15.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                       <td style="text-align: center; font-size: 18px; line-height: 2.5; padding-top: 10px; padding-bottom: 10px;">&mdash;</td>
-                      <!-- <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/valle/15.wav" autoplay="">Your browser does not support the audio element.</audio></td> -->
                       <td style="text-align: center"><audio controls="controls" style="width: 160px;"><source src="audios/librispeech_16kHz/ours/15.wav" autoplay="">Your browser does not support the audio element.</audio></td>
                     </tr>
                     </tbody>
@@ -1245,60 +1212,6 @@
         </div>
       </div>
     </template>
-    <!-- <template id="compare-box"> -->
-            <!-- <div class="card card-body clam-card">
-        <div>
-          <p class="clam-prompt-text">
-            <strong>Prompt Text</strong>: <span></span>
-          </p>
-          <p class="clam-text"><strong>Text</strong>: <span></span></p>
-        </div>
-        <div class="clam-audioviz">
-          <canvas></canvas>
-          <audio controls=""></audio>
-        </div>
-        <div class="clam-toggle">
-          <div class="show">
-            <i class="bi bi-arrow-down-square"></i>
-            Show baseline(s)
-          </div>
-          <div>
-            <i class="bi bi-arrow-up-square" style="margin-right: 6.34px"></i>
-            Hide baseline(s)
-          </div>
-        </div>
-        <div class="collapse multi-collapse clam-sample-box">
-          <div class="table-responsive pt-3">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="border-right">Prompt (Unmodified)</th>
-                  <th>Ground Truth</th>
-                  <th>YourTTS</th>
-                  <th>Vall-E</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="border-right" data-label="Prompt (Unmodified)">
-                    <audio controls="controls" preload="none"></audio>
-                  </td>
-                  <td data-label="Ground Truth">
-                    <audio controls="controls" preload="none"></audio>
-                  </td>
-                  <td data-label="YourTTS">
-                    <audio controls="controls" preload="none"></audio>
-                  </td>
-                  <td data-label="Vall-E">
-                    <audio controls="controls" preload="none"></audio>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div> -->
-    <!-- </template> -->
     <div id="fab" class="fab">
       <a class="mainop" href="#myTab">
         <i class="bi bi-arrow-bar-up"></i>
