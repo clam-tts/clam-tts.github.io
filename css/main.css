@@ -1,3 +1,14 @@
+.affiliation {
+  font-style: italic;
+}
+.affiliation p {
+  font-weight: bold;
+  font-style: normal;
+}
+.affiliation a {
+  color: inherit;
+}
+
 .clam-card {
   margin-top: 16px;
 }
