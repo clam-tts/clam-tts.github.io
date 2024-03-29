@@ -9,6 +9,18 @@
   color: inherit;
 }
 
+.links a {
+  font-weight: bold;
+  background-color: #454545;
+  border-left: 1px;
+  border-radius: 290486px;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
 .clam-card {
   margin-top: 16px;
 }
